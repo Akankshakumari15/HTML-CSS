@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+</head>
+<body>
+
+  <h2>Login</h2>
+
+  <form action="/submit-login" method="POST">
+    <!-- Username or Email -->
+    <label for="username">Username or Email:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Login Button -->
+    <input type="submit" value="Login"><br><br>
+  </form>
+
+  <!-- Social login options -->
+  <p>or sign in with</p>
+  <a href="https://accounts.google.com" target="_blank">
+    <button type="button">Google</button>
+  </a>
+  <a href="https://www.facebook.com/login" target="_blank">
+    <button type="button">Facebook</button>
+  </a>
+
+</body>
+</html>

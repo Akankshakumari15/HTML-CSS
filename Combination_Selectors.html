@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background-color: red;
+        }
+        /*psedu classes*/
+        ul li:first-child{
+            background-color: aqua;
+        }
+        ul li:last-child{
+            background-color: pink;
+        }
+        ul li:nth-of-type(even){
+            background-color: blueviolet;
+        }
+        /*changes colour after transition time when hovered*/
+        ul li:hover{
+            background-color: antiquewhite;
+            transition: 4s;
+            height: 50;
+            width: 50;
+        }
+        /*when hovered changes colour of input text box*/
+        input:hover{
+            background-color: pink;
+            transform: 2s;
+        }
+        /*when clicked on the input box, changes colour*/
+        input:focus{
+            background-color: blue;
+        }
+        
+        /*to display content before any heading or para*/
+        h3::before{
+            content: "hello ";
+            background-color: aquamarine;
+            display: inline-block;
+        }
+        h3::after{
+            content: "byee ";
+            background-color: bisque;
+        }
+        h2::before{
+            content: "😜";
+            background-color: aqua;
+        }
+        h2::after{
+            content: "😜";
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>div tag:hello</p>
+    </div>
+    <span>
+        <p>span tag:hello</p>
+    </span>
+
+    <ul>
+        <li>hello</li>
+        <li>hiii</li>
+        <li>byee</li>
+        <li>namaste</li>
+        <li>good morning</li>
+    </ul>
+    
+    <span>Focus & Hover:</span>
+    <input type="text"><br><br>
+    
+    <span>Before & After:</span>
+    <h3>hiiii</h3>
+     
+    <h2>namaste</h2>
+</body>
+</html>

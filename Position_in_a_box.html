@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*to move box to the center of viewport*/
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #parent{
+            border: 4px solid black;
+            height: 400px;
+            width: 400px;
+            position: relative;/*to make the child move w.r.t the parent div and not the viewport's edges */
+        }
+        #child{
+            background-color: pink;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 20px;
+            right: 170px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+
+        </div>
+    </div>
+</body>
+</html>
