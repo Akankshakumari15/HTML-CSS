@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent {
+            height: 500px;
+            width: 80vw;
+            border: 5px solid black;
+            margin: 50px auto;
+            display: flex;
+            justify-content: baseline;          /*child stick to upper edge of parent*/
+            justify-content: center;            /*child are in between*/
+            justify-content: end;               /*child are at the end of parent's edge*/
+            justify-content: space-around;      /*space is divided in a round manner between the children*/
+            justify-content: space-between;     /*space is divided only between the children and not the edges*/
+            justify-content: space-evenly;      /*all children have equal distance between them*/
+            flex-direction: column-reverse ;    /*column of children gets reversed*/
+            flex-direction: row-reverse;        /*row of children gets reversed*/
+            flex-wrap: wrap;                    /*makes the viewport flexible for any type of screen-->items shrink from top to bottom*/
+            flex-wrap: wrap-reverse;            /*makes the viewport flexible for any type of screen-->items shrink from bottom to top*/
+        }
+        #parent div{
+            height: 100px;
+            width: 100px;
+        }
+        #one{
+            background-color: aqua;
+        }
+        #two{
+            background-color: pink;
+        }
+        #three{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+</body>
+</html>
